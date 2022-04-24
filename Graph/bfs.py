@@ -20,6 +20,7 @@ class BFS:
                     self.visited[self.graph[current][i]] = True
                     self.dist[self.graph[current][i]] = self.dist[current] + 1
                     self.pred[self.graph[current][i]] = current
+        print(f"Distance from source to all vertices: {self.dist}")
             
 
 bfs = BFS(8)
